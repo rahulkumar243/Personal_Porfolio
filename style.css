@@ -1,0 +1,355 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* White text for contrast */
+    background-color: #000; /* Main black background */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #222; /* Dark header background */
+    padding: 50px; /* Reduced padding for better alignment */
+    margin-bottom: 50px;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center the content horizontally */
+}
+
+header .container {
+    display: flex;
+    width: 100%; /* Full width */
+    max-width: 700px; /* Set a maximum width for the container */
+    margin: 10px auto; /* Center the container */
+}
+
+.header-content {
+    flex-grow: 1; /* Allow content to take up available space */
+    margin-right: 30px; /* Space between text and image */
+    color: #ff1b1b; /* Red text color */
+}
+
+.header-content h1 {
+    font-size: 50px; /* Heading size */
+    margin: 10px 0;
+}
+
+.header-content p {
+    font-size: 50px; /* Paragraph size */
+    margin-bottom: 70px;
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline; /* Display links inline */
+    margin: 0 20px; /* Space between links */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    color: #ff1b1b; /* Link color */
+}
+
+header nav ul li a:hover {
+    color: #d31414; /* Darker red on hover */
+}
+
+.header-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    margin-right: 10px; /* Push the image to the right end */
+    margin-top: 50px;
+}
+
+header img {
+    width: 200px; /* Adjust width as needed */
+    height: 250px; /* Maintain aspect ratio */
+    border-radius: 20%; /* Round image corners */
+    border: 2px solid #ff1b1b; /* Glowing red border */
+}
+
+/* About Me Section */
+#about {
+    padding: 50px 20px; /* Top and bottom padding */
+    background-color: #222; /* Dark background for contrast */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 50px; /* Space below the section */
+}
+
+.container.about-section {
+    display: flex; /* Flexbox for the container */
+    align-items: flex-start; /* Align items at the start */
+    width: 100%; /* Full width */
+}
+
+.about-image {
+    flex: 0 0 200px; /* Fixed width for image section */
+    margin-right: 30px; /* Space between image and content */
+    margin-top: 40px;
+    text-align: center; /* Center text below image */
+}
+
+.about-image img {
+    width: 300px; /* Image size */
+    height: 300px; /* Image size */
+    border-radius: 50%; /* Circular image */
+    border: 5px solid #ff1b1b; /* Glowing red border */
+}
+
+.about-content {
+    flex-grow: 1; /* Allow content to grow */
+    margin-left: 80px;
+}
+
+#about h2 {
+    font-size: 32px; /* Heading size */
+    color: #ff1b1b; /* Glowing red color */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+#about p {
+    font-size: 18px; /* Paragraph size */
+    margin-bottom: 20px; /* Space below paragraph */
+    color: white; /* White text color */
+}
+
+#about ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    font-size: 18px; /* Font size for list */
+}
+
+#about ul li {
+    margin-bottom: 10px; /* Space between list items */
+    text-align: left; /* Left align list items */
+    color: white; /* White text for list items */
+}
+
+#about ul li strong {
+    font-weight: bold; /* Bold text for labels */
+    color: #ff1b1b; /* Glowing red for labels */
+}
+
+#about a {
+    color: white; /* Red for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+#about a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.btn.cv-download {
+    display: inline-block; /* Inline block for button */
+    background-color: #ff1b1b; /* Glowing red button */
+    color: #fff; /* White text */
+    padding: 12px 25px; /* Padding for button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    margin-top: 20px; /* Space above button */
+}
+
+.btn.cv-download:hover {
+    background-color: #d31414; /* Darker red on hover */
+}
+
+
+/* Skills Section */
+#skills {
+    padding: 50px 20px; /* Top and bottom padding */
+    background-color: #222; /* Slightly lighter for contrast */
+    text-align: center; /* Centering text */
+    margin-bottom: 50px; /* Space below section */
+}
+
+#skills h2 {
+    font-size: 36px;
+    color: #ff1b1b; /* Glowing red */
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center the items */
+}
+
+.skills-subsection {
+    width: 100%; /* Full width for the top section */
+    margin: 10px 0; /* Margin for spacing */
+    padding: 20px;
+    border: 1px solid #444; /* Dark border */
+    border-radius: 10px;
+    background-color: #111; /* Dark background */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.skills-subsection h3 {
+    border-bottom: 2px solid white; /* Glowing red border */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: white; /* Glowing red */
+}
+
+.skills-group {
+    display: flex;
+    justify-content: space-between; /* Evenly distribute space */
+    width: 100%; /* Full width for alignment */
+}
+
+.skill-column {
+    width: 45%; /* Set width for proper spacing */
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: azure;
+}
+
+.skill-icon {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ff1b1b;
+}
+
+.skill h4 {
+    font-size: 20px;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.progress-bar {
+    flex-grow: 2;
+    background-color: #444; /* Darker bar background */
+    border-radius: 10px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #ff1b1b; /* Glowing red */
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 20px; /* Top and bottom padding */
+    background-color: #222; /* Slightly lighter for contrast */
+    color: #fff;
+    text-align: center; /* Centering text */
+    margin-bottom: 50px; /* Space below section */
+}
+
+#projects h2 {
+    font-size: 36px;
+    color: #ff1b1b; /* Glowing red */
+    margin-bottom: 30px;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+#projects ul li {
+    margin-bottom: 20px;
+}
+
+.other-projects {
+    text-align: center;
+    margin-top: 30px; /* Space before button */
+}
+
+.other-projects .btn {
+    display: inline-block;
+    background-color: #ff1b1b; /* Glowing red button */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.other-projects .btn:hover {
+    background-color: #d31414; /* Darker red on hover */
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px; /* Top and bottom padding */
+    background-color: #222; /* Slightly lighter for contrast */
+    text-align: center; /* Centering text */
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 36px;
+    color: #ff1b1b; /* Glowing red */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contact .btn {
+    display: inline-block;
+    background-color: #ff1b1b; /* Glowing red button */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#contact .btn:hover {
+    background-color: #d31414; /* Darker red on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block; /* Stack links on mobile */
+        margin: 10px 0; /* Margin for spacing */
+    }
+
+    #about {
+        flex-direction: column; /* Stack about section content */
+        text-align: center; /* Center text */
+    }
+
+    #about .about-image {
+        margin: 0 auto; /* Center the image on mobile */
+    }
+
+    .skills-container {
+        flex-direction: column; /* Stack skill sections on mobile */
+        align-items: center; /* Center the items */
+    }
+
+    .skills-subsection {
+        width: 90%; /* Full width on mobile */
+        margin: 10px 0; /* Margin for spacing */
+    }
+
+    .cv-download {
+        position: relative; /* Reset position */
+        left: 0;
+        bottom: 0;
+        margin-top: 20px;
+    }
+}
